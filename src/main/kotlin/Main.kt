@@ -1,7 +1,15 @@
-fun main(args: Array<String>) {
-    println("Hello World!")
+fun main() {
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+    val rockPlanets = arrayOf<String>("Mercury", "Venus", "Earth", "Mars")
+    val gasPlanets = arrayOf<String>("Jupiter", "Saturn", "Uranus", "Neptune")
+    val solarSystem = rockPlanets + gasPlanets
+
+
+    println(solarSystem[3])
+    solarSystem[3] = "Little Earth"
+    println(solarSystem[3])
+    val newSolarSystem = rockPlanets + gasPlanets + "Pluto"
+    println(newSolarSystem[8])
+
+
 }
